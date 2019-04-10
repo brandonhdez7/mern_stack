@@ -1,0 +1,29 @@
+.slide-drawer{
+    height: 100%;
+    background: white;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 75%;
+    z-index: 200;
+    max-width: 400px;
+}
+.slide-drawer ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.slide-drawer li{
+    margin: 10px 0px;
+}
+.slide-drawer a{
+    color: black;
+    text-decoration: none;
+}
+.slide-drawer a:hover,
+.slide-drawer a:active{
+    color: red;
+}
