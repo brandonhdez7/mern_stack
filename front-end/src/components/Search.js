@@ -4,7 +4,7 @@ import  {BrowserRouter as Router, Link } from 'react-router-dom'
 import SlideDrawer from './SlideDrawer/SlideDrawer';
 import Backdrop from './Backdrop/Backdrop'
 
-class Home extends Component{
+class Search extends Component{
     state = {
         slideDrawerOpen: false
     }
@@ -27,25 +27,25 @@ class Home extends Component{
         }
 
         return(
-            <div className="homePage">
+            <div className="searchPage">
                 <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
                 <SlideDrawer show={this.state.slideDrawerOpen}/> 
                 {backdrop}
-                <div className="homeMain">
-                    <img className="homeImg" src="Images/web-20180416200607977871.png" alt="" />
-                    <h1>Professional Hobo</h1>
-                    <i>Laughter is an instant vacation</i>
+                <div className="searchForm">
                     <form>
-                        <label className="homeSearch">
-                            <input placeholder="Destination" type="text" required />
-                            <img className="label-text1" src="./Images/55369.png" alt="" />
+                        <label>
+                            <input type="text" required />
+                            <img className="label-text" src="./Images/images.png" alt="" />
                         </label>
-                    </form>
-
+                        <label>
+                            <input type="password" required />
+                            <img className="label-text" src="./Images/locked-outline.png" alt="" />
+                        </label>
+                            <button>Login</button>
+                    </form> 
                 </div>
-
             </div>
         )
     }
 }
-export default Home;
+export default Search;
