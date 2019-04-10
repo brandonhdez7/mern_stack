@@ -1,12 +1,18 @@
 .toolbar{
     position: 100%;
     background-color: transparent;
-    height: 56
+    height: 56px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
 }
 .toolbar_navigation{
     display: flex;
     height: 100%;
+    width: 100%;
     align-items: center;
+    justify-content: space-between;
     padding: 0px;
 }
 
@@ -16,10 +22,7 @@
     font-size: 20px;
 }
 .toolbar_logo{
-    margin-left: 10px;
-}
-.spacer{
-    flex: 1;
+    margin-right: 10px;
 }
 
 .toolbar_navigation_items ul{
@@ -40,4 +43,19 @@
 .toolbar_navigation_items a:hover,
 .toolbar_navigation_items a:active{
     color: red
+}
+
+
+
+
+@media (max-width: 480px){
+    .toolbar_navigation_items{
+        display: none;
+    }
+}
+
+@media(min-width: 480px) {
+    .toolbar_toggle_button{
+        display: none;
+    }
 }

@@ -4,9 +4,10 @@
     color: white;
     text-decoration: none;
     padding-right: 10px;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
   }
-  /* menu navbar */
 
 
   /* login page */
@@ -18,7 +19,7 @@
     align-items: center;
     flex-direction: column;
     background: rgb(0,46,74);
-background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
+    background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
 
   } 
   .loginImage{
@@ -85,17 +86,40 @@ background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
 
   .loginForm button{
     padding: 10px 100px 10px 100px;
-    background: rgb(2,0,36);
-    background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(0,67,108,1) 0%, rgba(0,212,255,1) 100%);
+    background: rgb(0,46,74);
+background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
     border: 0px;
     border-radius: 20px;
     font-size: 20px;
     font-weight: 600;
     color: white;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   }
   .loginPage h3{
-    padding-top: 40px;
+    padding-top: 60px;
     color: white;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  /* home page */
+
+  .homePage{
+    height: 100vh;
+    width: 100%;
+    background: rgb(0,46,74);
+    background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
+  }
+  .homeMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+  }
+  .homeMain .homeImg{
+    width: 100%;
+    height: 325px;
   }
 }

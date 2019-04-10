@@ -39,15 +39,18 @@ class Login extends Component{
                             <img className="label-text" src="./Images/images.png" alt="" />
                         </label>
                         <label>
+                            <input type="email" required />
+                            <img className="label-text" src="./Images/584856a0e0bb315b0f7675a9.png" alt="" />
+                        </label>
+                        <label>
                             <input type="password" required />
                             <img className="label-text" src="./Images/locked-outline.png" alt="" />
                         </label>
-                            <button>Login</button>
+                            <button>SignUp</button>
                     </form> 
                 </div>
                 <Router>
-                    <Link className="links" to="/#">Forgot Password?</Link>
-                    <h3>Don't have an account? <Link className="links" to="/#">SignUp</Link></h3>
+                    <h3>Already have an account? <Link className="links" to="/#">Login</Link></h3>
                 </Router>
             </div>
         )
