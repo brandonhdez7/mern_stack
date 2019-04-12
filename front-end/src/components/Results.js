@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Toolbar from './Toolbar/Toolbar'
-import  {BrowserRouter as Router, Link } from 'react-router-dom'
+// import  {BrowserRouter as Router, Link } from 'react-router-dom'
 import SlideDrawer from './SlideDrawer/SlideDrawer';
 import Backdrop from './Backdrop/Backdrop'
 
@@ -44,6 +44,7 @@ class Results extends Component{
                                 
                             </div>
                             <div className="ticketBottom">
+                            
                             </div> 
                         </div>
                     </div>
