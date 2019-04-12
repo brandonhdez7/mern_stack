@@ -14,12 +14,7 @@ if(props.show){
     return(
         <nav className={drawerClasses} >
             <ul>
-                <div className="profile">
-                    <div className="profileImg">
-                        <img src="/#" alt="" />
-                    </div>
-                    <h2>Jose</h2>
-                </div>
+                
                 {/* <li><img src="Images/trips.png" alt=""/><a href="/">My Trips</a></li>
                 <li><img src="Images/save.png" alt=""/><a href="/">Saved</a></li>
                 <li><img src="Images/about.png" alt=""/><a href="/">About</a></li>

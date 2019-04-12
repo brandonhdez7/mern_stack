@@ -8,6 +8,7 @@ class Auth extends Component{
         this.props.history.push(`/`)
     }
 
+
     render(){
        const loginRegLink = (
            <ul className="navbar-nav">
@@ -39,6 +40,13 @@ class Auth extends Component{
        )
        return (
            <nav>
+               <div className="profile">
+                    <div className="profileImg">
+                        <img src="/#" alt="" />
+                    </div>
+                    <h2>jose</h2>
+                </div>
+
                <button type="button">
                </button>
                <div>
