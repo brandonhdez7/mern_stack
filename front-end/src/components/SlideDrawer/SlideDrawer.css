@@ -35,7 +35,6 @@ background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(80,80,80,1) 100%);
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .slide-drawer li{
     margin: 10px 0px;
@@ -58,6 +57,19 @@ background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(80,80,80,1) 100%);
 
 .slide-drawer .LoginLink{
     padding-top: 150px;
+}
+.navbar-nav{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.authLink{
+    width: 100%;
+    justify-content: flex-end;
+}
+.navigation{
+    width: 100%;
+    
 }
 
 

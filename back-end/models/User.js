@@ -21,7 +21,10 @@ module.exports = db.sequelize.define(
         created: {
         type: Sequelize.DATE,
         defaultValue: Sequelize.NOW
-        }
+        },
+        imageProfile: {
+            type: Sequelize.STRING
+          },
     },
     {
         timestamps: false

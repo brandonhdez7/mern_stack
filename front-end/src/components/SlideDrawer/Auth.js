@@ -1,7 +1,10 @@
 import React, {Component} from 'react'
 import {Link, withRouter} from 'react-router-dom'
+import ProfileName from './ProfileName'
+import ProfileImage from '../ProfileImage';
 
 class Auth extends Component{
+
     logOut(e){
         e.preventDefault()
         localStorage.removeItem('usertoken')
@@ -26,30 +29,34 @@ class Auth extends Component{
        )
        const userLink = (
             <ul className="navbar-nav">
-                <li className="nav=item">
-                    <Link to="/profile" className="nav-link">
-                        User
-                    </Link>
-                </li>
-                <li className="nav=item">
-                    <a href="/" onClick={this.logOut.bind(this)} className="nav-Link">
-                        Logout
-                    </a>
-                </li>
+                <div className="authLink">
+                    <li className="nav=item">
+                        <Link to="/profile" className="nav-link">
+                            User
+                        </Link>
+                    </li>
+                    <li className="nav=item">
+                        <a href="/" onClick={this.logOut.bind(this)} className="nav-Link">
+                            Logout
+                        </a>
+                    </li>
+                </div>
+                <div className="profile">
+                    <div className="profileImg">
+                        <ProfileImage />
+                    </div> 
+                <ProfileName />
+                </div>
             </ul>
        )
        return (
            <nav>
-               <div className="profile">
-                    <div className="profileImg">
-                        <img src="/#" alt="" />
-                    </div>
-                    <h2>jose</h2>
-                </div>
-
                <button type="button">
                </button>
-               <div>
+               <div className="navigation">
+                   <div>
+                    {localStorage.usertoken ? userLink : loginRegLink}
+                    </div>
                    <ul>
                        <li>
                            <Link to="/">
@@ -57,7 +64,6 @@ class Auth extends Component{
                            </Link>
                        </li>
                    </ul>
-                   {localStorage.usertoken ? userLink : loginRegLink}
                </div>
            </nav>
        )

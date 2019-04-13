@@ -4,6 +4,7 @@ import SlideDrawer from './SlideDrawer/SlideDrawer';
 import Backdrop from './Backdrop/Backdrop';
 import Toolbar from './Toolbar/Toolbar';
 import {register} from './UserFunctions'
+import axios from 'axios'
 
 
 class Profile extends Component{
@@ -18,6 +19,8 @@ class Profile extends Component{
         this.onChange = this.onChange.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
     }
+
+
 
     onChange(e){
         this.setState({[e.target.name]: e.target.value})
@@ -67,18 +70,20 @@ class Profile extends Component{
         return(
             <div className="loginPage">
                 <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
-                <SlideDrawer show={this.state.slideDrawerOpen}/> 
+                <SlideDrawer show={this.state.slideDrawerOpen} />
                 {backdrop}
                 <img className="loginImage" src="./Images/paper-plane-icon-white-vector-16585648.png" alt="" />
                 <div className="loginForm">
                   
                     <form noValidate onSubmit={this.onSubmit}>
+                        <input type="file" onChange={this.fileSelectedHandler} />
+                        <button onClick={this.fileUploadHandler}>Upload Image</button>
                         <h4>Name</h4>
-                        <input name="name" type="text" value={this.state.name} onChange={this.onChange}></input>
+                        <h4>{this.state.name}</h4>
                         <h4>email</h4>
-                        <input name="email" type="email" value={this.state.email} onChange={this.onChange}></input>
+                        <h4>{this.state.email}</h4>
                         <h4>Password</h4>
-                        <input name="password" type="password" value={this.state.password} onChange={this.onChange}></input>
+                        <h4>{this.state.password}</h4>
                         <button type="submit">Save</button>
                     </form>  
                 </div> 
