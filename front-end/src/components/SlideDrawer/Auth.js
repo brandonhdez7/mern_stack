@@ -1,10 +1,8 @@
 import React, {Component} from 'react'
 import {Link, withRouter} from 'react-router-dom'
 import ProfileName from './ProfileName'
-import ProfileImage from '../ProfileImage';
 
 class Auth extends Component{
-
     logOut(e){
         e.preventDefault()
         localStorage.removeItem('usertoken')
@@ -42,21 +40,20 @@ class Auth extends Component{
                     </li>
                 </div>
                 <div className="profile">
-                    <div className="profileImg">
-                        <ProfileImage />
-                    </div> 
-                <ProfileName />
+                    <div className="profileImg"> 
+
+                   
+                    </div>
+                    <ProfileName />
                 </div>
             </ul>
        )
        return (
            <nav>
-               <button type="button">
-               </button>
                <div className="navigation">
-                   <div>
+                <div>
                     {localStorage.usertoken ? userLink : loginRegLink}
-                    </div>
+                </div> 
                    <ul>
                        <li>
                            <Link to="/">

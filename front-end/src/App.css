@@ -1,4 +1,8 @@
 @media (max-width: 480px) {
+  body{
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
   /* navbar */
   .links{
     color: white;
@@ -252,6 +256,215 @@ background: linear-gradient(0deg, rgba(215,215,215,1) 0%, rgba(113,113,113,1) 10
   width: 100%;
   height: 50px;
 }
+
+
+}
+
+@media (min-width: 1280px) {
+ body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* navbar */
+ul .navbar-nav{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* home */
+  .homePage{
+    height: 100vh;
+    width: 100%;
+    background: rgb(0,46,74);
+    background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
+  }
+  .homeMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+  }
+  .homeMain .homeImg{
+    width: 25%;
+    height: 300px;
+  }
+
+  .homeMain h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-weight: 800
+  }
+  .homeMain i{
+    font-size: 30px;
+  }
+
+
+  form {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+
+  .homeSearch {
+    display: block;
+    letter-spacing: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .homeSearch .label-text1 {
+    cursor: text;
+    width: 30px;   
+    -moz-transform: translateX(-110px)translateY(-40px);
+    -ms-transform: translateX(110px)translateY(-40px);
+    -webkit-transform: translateX(-110px)translateY(-40px);
+    transform: translateX(-110px)translateY(-40px);
+    transition: all 0.3s;
+
+  }
+  .homeSearch input {
+    background-color: transparent;
+    border: 0px;
+    border: 2px solid #4A4A4A;
+    color: white;
+    font-size: 30px;
+    letter-spacing: -1px;
+    outline: 0;
+    padding: 5px 20px;
+    text-align: center;
+    transition: 1s ease-in-out;
+    width: 250px;
+  }
+  .homeSearch input:focus {
+    max-width: 100%;
+    width: 350px;
+    border: 2px solid white;
+    
+  }
+  .homeSearch input:focus + .label-text1 {
+    color: #F0F0F0;
+    width: 30px;
+    -moz-transform: translateX(-155px)translateY(-40px);;
+    -ms-transform: translateX(-155px)translateY(-40px);;
+    -webkit-transform: translateX(-155px)translateY(-40px);;
+    transform: translateX(-155px)translateY(-40px); ;
+    transition: all 1s;
+  }
+  .homeSearch input:valid + .label-text1 {
+    width: 30px;
+    -moz-transform: translateX(-155px)translateY(-40px);;
+    -ms-transform: translateX(-155px)translateY(-40px);;
+    -webkit-transform: translateX(-155px)translateY(-40px);;
+    transform: translateX(-155px)translateY(-40px);;
+    transition: all 1s;
+  }
+
+
+  /* login */
+
+  .loginPage{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(0,46,74);
+    background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
+
+  } 
+  .loginImage{
+    width: 120px;
+    padding: 50px 0px 50px 0px;
+  }
+  form {
+    text-align: center;
+    padding-top: 30px;
+  }
+  label {
+    display: block;
+    letter-spacing: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  label .label-text {
+    cursor: text;
+    width: 60px;   
+    -moz-transform: translateY(-34px);
+    -ms-transform: translateY(-34px);
+    -webkit-transform: translateY(-34px);
+    transform: translateY(-65px);
+    transition: all 0.3s;
+
+  }
+  label input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #4A4A4A;
+    color: white;
+    font-size: 30px;
+    letter-spacing: -1px;
+    outline: 0;
+    padding: 5px 20px;
+    text-align: center;
+    transition: all 0.3s;
+    width: 120px;
+  }
+  label input:focus {
+    max-width: 100%;
+    width: 220px;
+  }
+  label input:focus + .label-text {
+    color: #F0F0F0;
+    width: 40px;
+    -moz-transform: translateY-(40px);
+    -ms-transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-80px);
+    transition: all 0.3s;
+  }
+  label input:valid + .label-text {
+    width: 40px;
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-80px);
+    transition: all 0.3s;
+  }
+
+
+  .loginForm button{
+    padding: 10px 100px 10px 100px;
+    background: rgb(0,46,74);
+background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
+    border: 0px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .loginPage h3{
+    padding-top: 60px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+
+
 
 
 }

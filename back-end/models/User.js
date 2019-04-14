@@ -22,7 +22,7 @@ module.exports = db.sequelize.define(
         type: Sequelize.DATE,
         defaultValue: Sequelize.NOW
         },
-        imageProfile: {
+        imageURL: {
             type: Sequelize.STRING
           },
     },

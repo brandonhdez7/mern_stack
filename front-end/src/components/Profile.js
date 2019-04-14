@@ -5,6 +5,7 @@ import Backdrop from './Backdrop/Backdrop';
 import Toolbar from './Toolbar/Toolbar';
 import {register} from './UserFunctions'
 import axios from 'axios'
+import ProfileImage from './ProfileImage'
 
 
 class Profile extends Component{
@@ -76,8 +77,7 @@ class Profile extends Component{
                 <div className="loginForm">
                   
                     <form noValidate onSubmit={this.onSubmit}>
-                        <input type="file" onChange={this.fileSelectedHandler} />
-                        <button onClick={this.fileUploadHandler}>Upload Image</button>
+                        <ProfileImage />
                         <h4>Name</h4>
                         <h4>{this.state.name}</h4>
                         <h4>email</h4>

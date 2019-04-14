@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Auth from '../SlideDrawer/Auth'
 
 import './Toolbar.css'
 import DrawerToggleButton from '../SlideDrawer/DrawerToggleButton';
@@ -13,8 +13,7 @@ const toolbar = props => (
             <div className="toolbar_logo"><a href="/">The Logo</a></div>
             <div className="toolbar_navigation_items">
                 <ul>
-                    <li><a href="/">Products</a></li>
-                    <li><a href="/">Products</a></li>
+                    <Auth />
                 </ul>
             </div>
         </nav>
