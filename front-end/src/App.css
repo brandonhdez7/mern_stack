@@ -112,8 +112,8 @@ background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
   .homePage{
     height: 100vh;
     width: 100%;
-    background: rgb(0,46,74);
-    background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
+    background: rgb(215,215,215);
+background: linear-gradient(0deg, rgba(215,215,215,1) 0%, rgba(0,0,0,1) 100%);
   }
   .homeMain {
     display: flex;
@@ -188,81 +188,13 @@ background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
   }
 
 
-  /* search */
-
-
-  /* Results */
-.resultsPage{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.results{
-  background: rgb(0,46,74);
-  background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.resultsTitle{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.resultsTitle h1{
-  font-size: 50px;
-  color: white;
-}
-.resultsImage {
-  width: 120px;
-  padding: 0px 20px 10px 20px;
-}
-.planetImage{
-  width: 300px;
-  padding-bottom: 20px 
-}
-.resultsTickets{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: max-content;
-
-  background: rgb(215,215,215);
-background: linear-gradient(0deg, rgba(215,215,215,1) 0%, rgba(113,113,113,1) 100%);
-}
-.ticketBox{
-  display:flex;
-  width: 75%;
-  flex-direction: column;
-}
-.ticketTop{
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px dashed black;
-  width: 100%;
-  height: 125px;
-}
-.ticketBottom{
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  width: 100%;
-  height: 50px;
-}
-
-
 }
 
 @media (min-width: 1280px) {
  body{
   font-family: 'Roboto Condensed', sans-serif;
+  background: rgb(235,235,235);
+background: linear-gradient(180deg, rgba(235,235,235,1) 100%, rgba(59,59,59,1) 100%);
 }
 
 /* navbar */
@@ -282,28 +214,98 @@ ul .navbar-nav{
   .homePage{
     height: 100vh;
     width: 100%;
-    background: rgb(0,46,74);
-    background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
+    background: rgb(235,235,235);
+background: linear-gradient(180deg, rgba(235,235,235,1) 100%, rgba(59,59,59,1) 100%);
   }
   .homeMain {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    color: white;
+    color: rgb(80,80,80);
+    color: linear-gradient(180deg, rgba(80,80,80,1) 100%, rgba(59,59,59,1) 100%);
   }
-  .homeMain .homeImg{
-    width: 25%;
-    height: 300px;
-  }
+  .banner{
+    display: flex;
+    width: 95%;
+    height: 600px;
+    margin: 10px 25px 0px 25px;
+    justify-content: center;
+    align-items: center;
+}
+.bannerLeft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 70%;
+}
+.bannerLeft .fas{
+  font-size: 20px;
+}
+.links{
+  color: rgb(91,130,255);
+  color: linear-gradient(180deg, rgba(91,130,255,1) 0%, rgba(82,110,200,1) 100%, rgba(59,59,59,1) 100%);
+  text-decoration: none;
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.registerButtons button{
+  Padding: 15px 40px 15px 40px;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: 600;
+  background: rgb(91,130,255);
+  background: linear-gradient(180deg, rgba(91,130,255,1) 0%, rgba(82,110,200,1) 100%, rgba(59,59,59,1) 100%);
+  color: rgb(252,252,252);
+  color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
+  margin: 0px 5px 0px 5px;
+  transition: all 0.3s;
+  outline: none;
+}
+.registerButtons button:hover{
+  transform: translateY(-3px);
+  box-shadow: 2px 7px 15px 1px #888888;
+}
+.bannerRight{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.bannerRight .homeImage {
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
 
   .homeMain h1{
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 10px;
-    font-weight: 800
+    font-weight: 800;
+    text-align: center;
   }
-  .homeMain i{
-    font-size: 30px;
+  .bannerLeft p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    width: 450px;
   }
 
 
@@ -369,6 +371,163 @@ ul .navbar-nav{
   }
 
 
+  /* pricing */
+
+  .pricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 60px 20px 60px; 
+}
+.pricingNumber{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pricing h1{
+  font-size: 40px;
+}
+.pricing h5{
+    font-size: 15px;
+}
+.pricing h3{
+    font-size: 50px;
+    font-weight: 400;
+    margin: 10px 0px 20px 0px;
+}
+
+.pricing button:hover{
+    background-color: #009973;
+}
+.pricing1{
+    height: 85%;
+    width: 28%;
+    border: 1px solid #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(80,80,80);
+    color: linear-gradient(180deg, rgba(80,80,80,1) 100%, rgba(59,59,59,1) 100%);
+    background-color: white;
+}
+.pricingList{
+    display: flex;
+}
+.pricingIcon{
+    display: flex;
+    flex-direction: column;
+}
+.pricingIcon span{
+    margin: 0px;
+    padding: 0px;
+    padding: 0px 0px 20px 20px;
+    color:#40bf80
+}
+.pricingIcon .red{
+    color:#b30000;
+}
+
+.pricingName{
+    display: flex;
+    flex-direction: column;
+}
+.pricingName p{
+    margin: 0px;
+    padding: 0px 0px 20px 20px;
+    font-size: 15px;
+}
+.pricing1 button{
+    Padding: 10px 30px 10px 30px;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 600;
+    background: rgb(91,130,255);
+    background: linear-gradient(180deg, rgba(91,130,255,1) 0%, rgba(82,110,200,1) 100%, rgba(59,59,59,1) 100%);
+    color: rgb(252,252,252);
+    color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
+    margin: 0px 5px 20px 5px;
+}
+
+
+/* description */
+
+.description{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: center;
+}
+.descriptionBox{
+  height: 300px;
+  width: 25%;
+  margin: 0px 20px 0px 20px;
+  /* border: 1px solid black; */
+  background: rgb(68,95,181);
+  background: linear-gradient(180deg, rgba(68,95,181,1) 0%, rgba(249,249,249,1) 0%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:  0px 10px 0px 10px;
+  text-align: center;
+}
+.descriptionBox img{
+  width: 100px;
+}
+.descriptionBox:hover{
+  transform: translateY(-3px);
+  box-shadow: 2px 7px 15px 1px #888888;
+}
+
+
+/* moredescription */
+
+  .moreDescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
+  }
+  .description1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 30px 0px
+  }
+  .descriptionLeft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .descriptionRight{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .descriptionRight img{
+    width: 500px;
+  }
+  .descriptionLeft p{
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+
+
   /* login */
 
   .loginPage{
@@ -377,9 +536,8 @@ ul .navbar-nav{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: rgb(0,46,74);
-    background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
-
+    background: rgb(235,235,235);
+    background: linear-gradient(180deg, rgba(235,235,235,1) 100%, rgba(59,59,59,1) 100%);
   } 
   .loginImage{
     width: 120px;

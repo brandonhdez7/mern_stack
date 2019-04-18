@@ -10,7 +10,7 @@ const toolbar = props => (
             <div className="toolbar_toggle_button">
                 <DrawerToggleButton click={props.drawerClickHandler}/>
             </div>
-            <div className="toolbar_logo"><a href="/">The Logo</a></div>
+            <div className="toolbar_logo"><a href="/"><img src="Images/modern-flat-digital-wallet-concept-vector-9283516.png" alt=""/></a></div>
             <div className="toolbar_navigation_items">
                 <ul>
                     <Auth />

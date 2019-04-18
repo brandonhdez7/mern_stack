@@ -1,0 +1,36 @@
+import React, {Component} from 'react';
+
+
+class MoreDescription extends Component{
+    render(){
+        return(
+            <div className="moreDescription">
+                <div className="description1">
+                    <div className="descriptionLeft">
+                        <h1>It's your data. You decide what's shared.</h1>
+                        <p>The Budget Hobo connects to the banks you trust with 
+                            the apps you love so you can make the most of your finances
+                        </p>
+                    </div>
+                    <div className="descriptionRight">
+                        <img src="/Images/link-example-img.png" alt="" />
+                    </div>
+                </div>
+                <div className="description">
+                    <div className="descriptionRight">
+                        <img src="/Images/coding-isometric-12-400x350.png" alt="" />
+                    </div>
+                    <div className="descriptionLeft">
+                    <h1>It's your data. You decide what's shared.</h1>
+                        <p>The Budget Hobo connects to the banks you trust with 
+                            the apps you love so you can make the most of your finances
+                        </p>
+                    </div>
+
+                </div >
+            </div>
+        )
+    }
+}
+
+export default MoreDescription;

@@ -19,7 +19,7 @@ class Auth extends Component{
                     </Link>
                 </li>
                 <li className="nav=item">
-                    <Link to="/register" className="nav-link">
+                    <Link to="/register" className="nav-link1">
                     Register
                     </Link>
                 </li>
@@ -51,16 +51,22 @@ class Auth extends Component{
        return (
            <nav>
                <div className="navigation">
-                <div>
-                    {localStorage.usertoken ? userLink : loginRegLink}
-                </div> 
                    <ul>
-                       <li>
-                           <Link to="/">
+                       <li className="nav-link">
+                           <Link className="navbar_links" to="/">
                             Home
+                           </Link>
+                           <Link className="navbar_links" to="/">
+                            About
+                           </Link>
+                           <Link className="navbar_links" to="/">
+                            Contact us
                            </Link>
                        </li>
                    </ul>
+                <div>
+                    {localStorage.usertoken ? userLink : loginRegLink}
+                </div> 
                </div>
            </nav>
        )

@@ -1,11 +1,15 @@
 .toolbar{
     position: 100%;
-    background-color: transparent;
-    height: 56px;
+    background: rgb(242,242,242);
+    background: linear-gradient(180deg, rgba(242,242,242,1) 100%, rgba(59,59,59,1) 100%);
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
+    color: rgb(80,80,80);
+    color: linear-gradient(180deg, rgba(80,80,80,1) 100%, rgba(59,59,59,1) 100%);
+    text-decoration: none;
+    display: fixed
 }
 .toolbar_navigation{
     display: flex;
@@ -16,10 +20,8 @@
     padding: 0px;
 }
 
-.toolbar_logo a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
+.toolbar_logo img{
+    width: 55px;
 }
 .toolbar_logo{
     margin-right: 10px;
@@ -36,13 +38,12 @@
 }
 
 .toolbar_navigation_items a{
-    color: white;
     text-decoration: none;
 }
 
 .toolbar_navigation_items a:hover,
 .toolbar_navigation_items a:active{
-    color: red
+    color: rgb(91,130,255)
 }
 
 
