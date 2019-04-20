@@ -1,15 +1,17 @@
 .toolbar{
     position: 100%;
-    background: rgb(242,242,242);
-    background: linear-gradient(180deg, rgba(242,242,242,1) 100%, rgba(59,59,59,1) 100%);
+    background: rgb(26,15,75);
     height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    color: rgb(80,80,80);
-    color: linear-gradient(180deg, rgba(80,80,80,1) 100%, rgba(59,59,59,1) 100%);
+    color: rgb(190,190,190);
+    color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
     text-decoration: none;
-    display: fixed
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+    margin-bottom: 70px; 
 }
 .toolbar_navigation{
     display: flex;
@@ -28,6 +30,8 @@
 }
 
 .toolbar_navigation_items ul{
+    color: rgb(190,190,190);
+    color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
     list-style: none;
     margin: 0px;
     padding: 0px;

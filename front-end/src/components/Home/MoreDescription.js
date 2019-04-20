@@ -16,7 +16,7 @@ class MoreDescription extends Component{
                         <img src="/Images/link-example-img.png" alt="" />
                     </div>
                 </div>
-                <div className="description">
+                {/* <div className="description">
                     <div className="descriptionRight">
                         <img src="/Images/coding-isometric-12-400x350.png" alt="" />
                     </div>
@@ -27,7 +27,16 @@ class MoreDescription extends Component{
                         </p>
                     </div>
 
-                </div >
+                </div > */}
+
+                <div className="powered">
+                    <h1>Powered By</h1>
+                    <div className="poweredImg">
+                        <span><img src="/Images/coinbase.png" alt=""/></span>
+                        <span><img src="/Images/plaid.png" alt=""/></span>
+                        <span><img src="/Images/stripe.png" alt=""/></span>
+                    </div>
+                </div>
             </div>
         )
     }

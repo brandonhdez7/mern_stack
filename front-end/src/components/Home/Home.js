@@ -41,7 +41,7 @@ class Home extends Component{
                         <div className="bannerLeft">
                             <h1>Being On A Budget Has Never Been Easier.</h1>
                             <p>
-                                Help users improve their financial health with categorized transactions and
+                                Improve financial health with categorized transactions and
                                 make it easy for everyone to manage business finances.
                                 Pay friends, bills, or other businesses with The Budget Hobo.
                             </p>
@@ -52,7 +52,7 @@ class Home extends Component{
                             </div>
                         </div>
                         <div className="bannerRight">
-                            <img className="homeImage" src="/Images/online-banking-isometric-landing-page-internet-vector-22949573.png" alt=""/>
+                            <img className="homeImage" src="/Images/crypto-currency-isometric_2x.png" alt=""/>
                         </div>
                     </div>
                         < Description />

@@ -1,0 +1,362 @@
+@media (min-width: 1280px) {
+    .dashboardPage{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dashboard{
+        display: flex;
+        width: 100%;
+        color: rgb(80,80,80);
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+        height: max-content;
+    }
+    .profileImage{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        padding-bottom: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        border-radius: 5px;
+        margin: 15px;
+        overflow: hidden;
+        
+        
+    }
+    .profileImage img{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        border: 1px solid #d9d9d9;
+        background-color: #d9d9d9;
+    }
+    .profileImage h3{
+        padding: 5px;
+        color: rgb(80,80,80);
+    }
+
+    /* upload image
+    #imageUpload
+    {
+        /* display: none; */
+    /* } */
+    /* .profileImage form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    } */
+    /* #imageUpload{
+        padding-left: 150px;
+    }
+    
+    #profileImage
+    {
+        cursor: pointer;
+    } */
+    
+    
+    .navs{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        border-radius: 5px;
+        margin-bottom: 25px;
+    }
+    .list{
+        display: flex;
+        flex-direction: row;
+        margin: 40px 0px 20px 0px;
+        font-weight: 300;
+    }
+    .listIcon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .listIcon span{
+        margin: 0px;
+        text-decoration: none;
+        color: rgb(80,80,80);
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+    .listName{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
+    .listName a{
+        text-decoration: none;
+        color: rgb(80,80,80);
+        font-size: 15px;
+        padding-bottom: 10px;
+    
+    }
+    .listName a:hover{
+        color: #00cc99;
+    }
+    .listName3 a:hover{
+        color: #00cc99;
+    }
+    .listName2 a:hover{
+        color: #00cc99;
+    }
+    .list2{
+        display: flex;
+        font-weight: 300;
+        padding-bottom: 20px; 
+    }
+    .listIcon2{
+        display: flex;
+        flex-direction: column;
+    }
+    .listIcon2 span{    
+        text-decoration: none;
+        color: rgb(80,80,80);
+        padding-bottom: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+        margin: 0px;
+        padding-left: 20px
+    }
+    .listName2 a{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: rgb(80,80,80);
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .list3{
+        display: flex;
+        font-weight: 300;
+        padding-bottom: 0px; 
+    }
+    .listIcon3{
+        display: flex;
+        flex-direction: column;
+    }
+    .listIcon3 span{    
+        text-decoration: none;
+        color: rgb(80,80,80);
+        padding-bottom: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+        margin: 0px;
+        padding-left: 20px
+    }
+    .listName3 a{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: rgb(80,80,80);
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    /* board */
+
+    .board{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        color: rgb(80,80,80);
+        height: max-content;
+    }
+
+    .graphRow1{
+        width: 95%;
+        background: rgb(68,95,181);
+        background: linear-gradient(180deg, rgba(68,95,181,1) 0%, rgba(249,249,249,1) 0%);
+        border-radius: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        height: 200px;
+    }
+    .graph1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 49%;
+        border: 1px solid #d9d9d9;
+        height: 175px;
+        margin: 15px;
+    }
+    .graph2{
+        width: 49%;
+        border: 1px solid #d9d9d9;
+        margin: 15px;
+        height: 175px;
+    }
+    .graphRow2{
+        height: 150px;
+        width: 95%;
+        background: rgb(68,95,181);
+        background: linear-gradient(180deg, rgba(68,95,181,1) 0%, rgba(249,249,249,1) 0%);
+        border-radius: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .graph3, .graph4, .graph5, .graph6{
+        width: 22.8%;
+        height: 125px;
+        border: 1px solid #d9d9d9;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .graph3 h1, .graph4 h1, .graph5 h1, .graph6 h1{
+        font-size: 15px;
+    
+    }
+    .graph3 p{
+        color: #00ace6;
+        font-size: 30px;
+        margin: 0px;
+        padding: 15px 0px 5px 0px;
+    }
+    .graph4 p{
+        color: #40bf80;
+        font-size: 30px;
+        margin: 0px;
+        padding: 20px 0px 5px 0px;
+    }
+    .graph5 p{
+        color: #7575a3;
+        font-size: 30px;
+        margin: 0px;
+        padding: 20px 0px 5px 0px;
+    }
+    .graph6 p{
+        color: #b30000;
+        font-size: 30px;
+        margin: 0px;
+        padding: 20px 0px 5px 0px;
+    }
+    
+    hr{
+        border: 2px solid white;
+        width: 150px;
+    }
+    
+    .graphRow3{
+        height: 234px;
+        width: 95%;
+        background: rgb(68,95,181);
+        background: linear-gradient(180deg, rgba(68,95,181,1) 0%, rgba(249,249,249,1) 0%);
+        border-radius: 5px;
+        margin: 5px 5px 25px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .graph7 h1, .graph8 h1, .graph9 h1{
+        font-size: 15px;
+    
+    }
+    
+    .graph7{
+        width: 29%;
+        height: 210px;
+        border: 1px solid #d9d9d9;
+        margin: 10px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .category{
+        display: flex;
+        flex-direction: row;
+    }
+    .categoryIcon, .categoryName, .categoryPercent{
+        display: flex;
+        flex-direction: column;
+    }
+    .categoryIcon span{
+        padding-bottom: 20px;
+        margin: 0px;
+        padding: 5px 10px 5px 0px
+    }
+    .categoryName a{
+        text-decoration: none;
+        color: rgb(80,80,80);;
+        padding: 5px 70px 5px 10px
+    }
+    .categoryPercent p{
+        margin: 0px;
+        padding: 5px 0px 5px 0px
+    }
+    
+    .graph8{
+        width: 32%;
+        height: 210px;
+        border: 1px solid #d9d9d9;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: scroll;
+    }
+    .categoryTransaction{
+        width: 93%;
+    }
+    
+    #transactions td {
+        padding-bottom: 5px;
+    }
+    .transactionName a{
+        text-decoration: none;
+        color: rgb(80,80,80);;
+        width: 90%;
+        /* padding: 5px 70px 5px 10px */
+    }
+    .categoryAmount table{
+        margin: 0px;
+        padding: 5px 0px 5px 0px
+    }
+    
+    .graph9{
+        width: 32%;
+        height: 210px;
+        border: 1px solid #d9d9d9;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    
+    .graph9 img{
+        height: 200px;
+        weight: 100%;
+    }
+    
+    
+
+
+
+
+}
