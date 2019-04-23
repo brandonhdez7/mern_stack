@@ -353,7 +353,43 @@
         height: 200px;
         weight: 100%;
     }
-    
+
+
+
+
+    /* crypto page */
+    .cryptoPage{
+        width: 100%;
+        background: rgb(26,15,75);
+        background: linear-gradient(180deg, rgba(26,15,75,1) 0%, rgba(40,57,110,1) 100%);
+      }
+
+    .cryptoMain{
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: rgb(80,80,80);
+        color: linear-gradient(180deg, rgba(80,80,80,1) 100%, rgba(59,59,59,1) 100%);   
+    }
+
+    #crypto-container {
+        background:white;
+        width: 70%;
+        margin: 0 auto 4px auto;
+        padding: 1em;
+        box-shadow: 1px 1px 0 lightgrey;
+      }
+      
+      span.left {
+        font-weight: bold;
+      }
+      
+      span.right {
+        float:right;
+      }
     
 
 

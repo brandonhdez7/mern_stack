@@ -52,7 +52,7 @@ class Home extends Component{
                             </div>
                         </div>
                         <div className="bannerRight">
-                            <img className="homeImage" src="/Images/crypto-currency-isometric_2x.png" alt=""/>
+                            <img className="homeImage" src="/Images/coinquista_illu_v1a-01_2x.png" alt=""/>
                         </div>
                     </div>
                         < Description />

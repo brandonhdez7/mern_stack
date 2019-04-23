@@ -4,6 +4,7 @@ class Description extends Component{
     render(){
         return(
             <div className="description">
+                <h2>Why The Budget Hobo?</h2>
                 <div className="descriptionContainer">
                     <div className="descriptionBox">
                         <img src="/Images/banking.png" alt />

@@ -53,11 +53,14 @@ class Login extends Component{
 
         return(
             <div className="loginPage">
-                <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
-                <SlideDrawer show={this.state.slideDrawerOpen}/> 
+                {/* <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/> */}
+                <SlideDrawer show={this.state.slideDrawerOpen}/>
                 {backdrop}
-                <img className="loginImage" src="./Images/paper-plane-icon-white-vector-16585648.png" alt="" />
+                <div className="linkHomepage">
+                    <Link className="backHomepage"><i class="fas fa-arrow-left"></i> Go Back To Homepage</Link>
+                </div>
                 <div className="loginForm">
+                <img className="loginImage" src="./Images/modern-flat-digital-wallet-concept-vector-9283516.png" alt="" />
                     <form noValidate onSubmit={this.onSubmit}>
                         <label>
                             <input name="email" type="email" value={this.state.email} onChange={this.onChange} required />
@@ -69,11 +72,11 @@ class Login extends Component{
                         </label>
                             <button type="submit">Login</button>
                     </form>
-                </div>
                 <Router>
-                    <Link className="links" to="/#">Forgot Password?</Link>
+                    <Link className="links1" to="/#">Forgot Password?</Link>
                     <h3>Don't have an account? <Link className="links" to="/#">SignUp</Link></h3>
                 </Router>
+                </div>
             </div>
         )
     }

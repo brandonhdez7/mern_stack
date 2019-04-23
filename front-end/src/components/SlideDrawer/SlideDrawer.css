@@ -54,12 +54,11 @@ background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(80,80,80,1) 100%);
 .slide-drawer a:active{
     color: rgb(91,130,255);
 }
-
 .slide-drawer .LoginLink{
     padding-top: 150px;
 }
 .navbar-nav{
-    border-left: 3px solid  rgb(228,228,228);;
+    border-left: 2px solid rgb(150,150,150);
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -71,21 +70,21 @@ background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(80,80,80,1) 100%);
     border-radius: 7px;
     font-size: 20px;
     font-weight: 600;
-    border: 2px solid rgb(91,130,255);
-    color: rgb(80,80,80);
-    color: linear-gradient(180deg, rgba(80,80,80,1) 100%, rgba(59,59,59,1) 100%);
+    border: 2px solid rgba(65,160,108,1);
+    color: rgb(190,190,190);
+  color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
     margin: 0px 5px 0px 5px;
 }
 .nav-link{
     font-size: 20px;
-    color: rgb(80,80,80);
-    color: linear-gradient(180deg, rgba(80,80,80,1) 100%, rgba(59,59,59,1) 100%);
+    color: rgb(190,190,190);
+  color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
 }
 
 .nav-link .navbar_links{
     margin: 0px 10px 0px 10px;
-    color: rgb(80,80,80);
-    color: linear-gradient(180deg, rgba(80,80,80,1) 100%, rgba(59,59,59,1) 100%);
+    color: rgb(190,190,190);
+  color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
 }
 
 .authLink{

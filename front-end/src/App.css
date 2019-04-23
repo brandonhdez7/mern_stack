@@ -232,8 +232,8 @@ ul .navbar-nav{
     color: linear-gradient(180deg, rgba(80,80,80,1) 100%, rgba(59,59,59,1) 100%);
   }
   .banner{
+    height: 91vh;
     display: flex;
-    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -245,18 +245,46 @@ ul .navbar-nav{
   justify-content: center;
   width: 50%;
 }
+@keyframes slide1 {
+	0% {
+		transform: translateX(-450px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
 .bannerLeft .fas{
   font-size: 20px;
 }
+.homeMain h1{
+  width: 600px;
+  margin: 0px;
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  color: rgb(252,252,252);
+  color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
+  animation: slide1 1s ease-out;
+}
+.bannerLeft p{
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  width: 550px;
+  color: rgb(190,190,190);
+  color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
+  animation: slide1 0.8s ease-out;
+}
 .links{
-  margin: 10px 0px 10px 0px;
-  color: rgb(91,130,255);
-  color: linear-gradient(180deg, rgba(91,130,255,1) 0%, rgba(82,110,200,1) 100%, rgba(59,59,59,1) 100%);
+  margin: 10px 0px 20px 0px;
+  color: rgba(65,160,108,1);
+  color: linear-gradient(180deg, rgba(26,15,75,1) 0%, rgba(42,75,89,1) 0%, rgba(65,160,108,1) 0%, rgba(91,255,130,1) 100%);
   text-decoration: none;
   padding-right: 10px;
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
+  animation: slide1 1s ease-out;
 }
 .registerButtons button{
   Padding: 10px 20px 10px 25px;
@@ -265,12 +293,13 @@ ul .navbar-nav{
   font-size: 20px;
   font-weight: 600;
   background: rgb(26,15,75);
-background: linear-gradient(180deg, rgba(26,15,75,1) 0%, rgba(17,147,207,1) 0%);
+  background: linear-gradient(180deg, rgba(26,15,75,1) 0%, rgba(42,75,89,1) 0%, rgba(65,160,108,1) 0%, rgba(91,255,130,1) 100%);
   color: rgb(252,252,252);
   color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
   margin: 0px 5px 0px 5px;
   transition: all 0.3s;
   outline: none;
+  animation: slide1 2s ease-out;
 }
 .registerButtons button:hover{
   transform: translateY(-3px);
@@ -283,6 +312,16 @@ background: linear-gradient(180deg, rgba(26,15,75,1) 0%, rgba(17,147,207,1) 0%);
   justify-content: center;
   align-items: center;
   height: 525px;
+  animation: slide 2s ease-out;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(150px);
+	}
+	100% {
+		transform: translateX(-0px);
+	}
 }
 
 @keyframes float {
@@ -303,21 +342,6 @@ background: linear-gradient(180deg, rgba(26,15,75,1) 0%, rgba(17,147,207,1) 0%);
 	animation: float 6s ease-in-out infinite;
 }
 
-  .homeMain h1{
-    font-size: 50px;
-    font-weight: 800;
-    text-align: center;
-    color: rgb(252,252,252);
-    color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
-  }
-  .bannerLeft p{
-    font-size: 20px;
-    text-align: center;
-    font-weight: 500;
-    width: 500px;
-    color: rgb(190,190,190);
-    color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
-  }
 
 
   form {
@@ -399,6 +423,7 @@ background: linear-gradient(180deg, rgba(26,15,75,1) 0%, rgba(17,147,207,1) 0%);
 }
 .pricing h1{
   font-size: 40px;
+  width: 100px;
 }
 .pricing h5{
     font-size: 15px;
@@ -470,31 +495,30 @@ background: linear-gradient(180deg, rgba(26,15,75,1) 0%, rgba(17,147,207,1) 0%);
   padding: 50px 0px 50px 0px;
   height: max-content;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(68,95,181);
-background: linear-gradient(180deg, rgba(68,95,181,1) 0%, rgba(244,244,244,1) 0%);
+  background: rgb(26,15,75);
+background: linear-gradient(180deg, rgba(26,15,75,1) 0%, rgba(213,210,223,1) 0%, rgba(255,255,255,1) 100%, rgba(91,255,130,1) 100%);
 }
 .descriptionContainer{
- position: relative;
- bottom: 75px;
  width: 75%;
  display: flex;
  align-items: center;
  justify-content: center;
- background: rgb(105, 131, 219);
- background: linear-gradient(180deg, rgba(68,95,181,1) 0%, rgba(249,249,249,1) 0%);
- box-shadow: 2px 7px 15px 1px #888888;
 }
 
 .descriptionBox{
   width: 25%;
+  margin: 0px 20px 0px 20px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 25px 20px 25px 20px;
   text-align: center;
+  box-shadow: 2px 7px 15px 1px #888888;
 }
 .descriptionBox img{
   width: 100px;
@@ -518,27 +542,35 @@ background: linear-gradient(180deg, rgba(68,95,181,1) 0%, rgba(244,244,244,1) 0%
   .description1{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 30px 0px 30px 0px
   }
   .descriptionLeft{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .descriptionRight{
-    width: 50%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .descriptionRight img{
-    width: 500px;
+    width: 900px;
   }
+  .descriptionImg2{
+    transform: translateX(200px);
+    z-index: 2;
+  }
+  .descriptionImg1{
+    transform: translateX(-400px);
+  }
+
   .descriptionLeft p{
     width: 400px;
     text-align: center;
@@ -603,19 +635,32 @@ background: linear-gradient(180deg, rgba(68,95,181,1) 0%, rgba(244,244,244,1) 0%
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    background: rgb(235,235,235);
-    background: linear-gradient(180deg, rgba(235,235,235,1) 100%, rgba(59,59,59,1) 100%);
-  } 
+    background: rgb(26,15,75);
+    background: linear-gradient(180deg, rgba(26,15,75,1) 0%, rgba(40,57,110,1) 100%);
+  }
+  .loginForm{
+    padding-top: 70px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 83%;
+    background: rgb(26,15,75);
+    background: linear-gradient(180deg, rgba(26,15,75,1) 0%, rgba(30,50,100,1) 100%);
+    box-shadow: 2px 7px 15px 1px #4b4b4b;
+  }
   .loginImage{
-    width: 120px;
-    padding: 50px 0px 50px 0px;
+    width: 100px;
+    padding: 0px 0px 50px 0px;
   }
   form {
     text-align: center;
     padding-top: 30px;
   }
-  label {
+  label{
     display: block;
     letter-spacing: 4px;
     text-align: center;
@@ -625,18 +670,18 @@ background: linear-gradient(180deg, rgba(68,95,181,1) 0%, rgba(244,244,244,1) 0%
   }
   label .label-text {
     cursor: text;
-    width: 60px;   
+    width: 50px;   
     -moz-transform: translateY(-34px);
     -ms-transform: translateY(-34px);
     -webkit-transform: translateY(-34px);
     transform: translateY(-65px);
     transition: all 0.3s;
-
+    outline: none;
   }
   label input {
     background-color: transparent;
     border: 0;
-    border-bottom: 2px solid #4A4A4A;
+    border-bottom: 2px solid #F0F0F0;
     color: white;
     font-size: 30px;
     letter-spacing: -1px;
@@ -670,16 +715,18 @@ background: linear-gradient(180deg, rgba(68,95,181,1) 0%, rgba(244,244,244,1) 0%
 
 
   .loginForm button{
-    padding: 10px 100px 10px 100px;
-    background: rgb(0,46,74);
-background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
-    border: 0px;
-    border-radius: 20px;
+    Padding: 10px 40px 10px 40px;
+    border-radius: 7px;
+    border: none;
     font-size: 20px;
     font-weight: 600;
-    color: white;
-    margin-bottom: 10px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    background: rgb(26,15,75);
+    background: linear-gradient(180deg, rgba(26,15,75,1) 0%, rgba(42,75,89,1) 0%, rgba(65,160,108,1) 0%, rgba(91,255,130,1) 100%);
+    color: rgb(252,252,252);
+    color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
+    margin: 0px 5px 0px 5px;
+    transition: all 0.3s;
+    outline: none;
     cursor: pointer;
   }
   .loginPage h3{
@@ -688,9 +735,39 @@ background: linear-gradient(0deg, rgba(0,46,74,1) 0%, rgba(120,204,255,1) 100%);
     font-size: 15px;
     font-weight: 600;
   }
+  .loginForm .links1{
+    color: rgb(252,252,252);
+    color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    text-decoration: none; 
+    padding: 15px 0px 0px 0px;
+  }
+  .linkHomepage{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .backHomepage{
+    color: rgb(252,252,252);
+    color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    text-decoration: none; 
+    padding: 10px;
+  }
 
 
-
+/* register game */
+.registerImage{
+  width: 100px;
+    padding: 0px 0px 50px 0px;
+}
+.registerLink{
+  padding-bottom: 30px;
+}
 
 
 }

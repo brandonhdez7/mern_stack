@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     color: rgb(190,190,190);
-    color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
     text-decoration: none;
     position: fixed;
     z-index: 100;
@@ -21,17 +20,15 @@
     justify-content: space-between;
     padding: 0px;
 }
-
 .toolbar_logo img{
-    width: 55px;
+    width: 60px;
 }
 .toolbar_logo{
     margin-right: 10px;
+    margin-left: 40px;
 }
 
 .toolbar_navigation_items ul{
-    color: rgb(190,190,190);
-    color: linear-gradient(180deg, rgba(252,252,252,1) 100%, rgba(59,59,59,1) 100%);
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -47,8 +44,11 @@
 
 .toolbar_navigation_items a:hover,
 .toolbar_navigation_items a:active{
-    color: rgb(91,130,255)
+    color: rgba(65,160,108,1);
+    color: linear-gradient(180deg, rgba(26,15,75,1) 0%, rgba(42,75,89,1) 0%, rgba(65,160,108,1) 0%, rgba(91,255,130,1) 100%);
 }
+
+
 
 
 
