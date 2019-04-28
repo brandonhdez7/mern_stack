@@ -13,8 +13,8 @@ class MoreDescription extends Component{
                         </p> */}
                     </div>
                     <div className="descriptionRight">
-                        <img className="descriptionImg2" src="/Images/5a79f951c69cc6000138e3d2_ChangeableColor8-11-min.png" alt="" />
-                        <img className="descriptionImg1" src="/Images/46233542_538560033278601_8288855549784611932_n.png" alt="" />
+                        {/* <img className="descriptionImg2" src="/Images/5a79f951c69cc6000138e3d2_ChangeableColor8-11-min.png" alt="" /> */}
+                        <img className="descriptionImg1" src="/Images/mockup.png" alt="" />
                     </div>
                 </div>
                 {/* <div className="description">

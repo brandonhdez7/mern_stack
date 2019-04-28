@@ -8,6 +8,11 @@ import Payments from './payments'
 import Footer from '../../Footer/Footer'
 import Description from './Description';
 import MoreDescription from './MoreDescription'
+import styled from 'styled-components'
+
+const AppWrapper = styled.div`
+    width: 100%;
+`
 
 class Home extends Component{
     state = {
@@ -55,18 +60,20 @@ class Home extends Component{
                             <img className="homeImage" src="/Images/coinquista_illu_v1a-01_2x.png" alt=""/>
                         </div>
                     </div>
+                    <AppWrapper>
                         < Description />
+                    </AppWrapper>
                     {/* <form>
                         <label className="homeSearch">
                             <input placeholder="Destination" type="text" required />
                             <img className="label-text1" src="./Images/55369.png" alt="" />
                         </label>
                     </form> */}
-                    < MoreDescription />
+                    {/* < MoreDescription />
                     <div className="pricing">
                         <Payments/>
                     </div>
-                    < Footer />
+                    < Footer /> */}
 
                 </div>
 

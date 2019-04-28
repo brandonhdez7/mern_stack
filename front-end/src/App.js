@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Dashboard from './components/AuthPages/Dashboard';
 import Terms from '../src/components/Terms'
 import CryptoWallet from './components/AuthPages/CryptoWallet'
+import About from '../src/components/About/About'
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
             <Route exact path="/Dashboard" component={Dashboard}></Route>
             <Route exact path="/Terms" component={Terms}></Route>
             <Route exact path="/CryptoWallet" component={CryptoWallet}></Route>
+            <Route exact path="/About" component={About}></Route>
           </div>
         </div>
      </Router>

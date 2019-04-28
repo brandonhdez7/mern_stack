@@ -57,7 +57,7 @@ class Login extends Component{
                 <SlideDrawer show={this.state.slideDrawerOpen}/>
                 {backdrop}
                 <div className="linkHomepage">
-                    <Link className="backHomepage"><i class="fas fa-arrow-left"></i> Go Back To Homepage</Link>
+                    <Link to="/" className="backHomepage"><i class="fas fa-arrow-left"></i> Go Back To Homepage</Link>
                 </div>
                 <div className="loginForm">
                 <img className="loginImage" src="./Images/modern-flat-digital-wallet-concept-vector-9283516.png" alt="" />
@@ -72,10 +72,8 @@ class Login extends Component{
                         </label>
                             <button type="submit">Login</button>
                     </form>
-                <Router>
-                    <Link className="links1" to="/#">Forgot Password?</Link>
-                    <h3>Don't have an account? <Link className="links" to="/#">SignUp</Link></h3>
-                </Router>
+                        <Link className="links1" to="/#">Forgot Password?</Link>
+                        <h3>Don't have an account? <Link to="/Register" className="links">SignUp</Link> </h3>
                 </div>
             </div>
         )

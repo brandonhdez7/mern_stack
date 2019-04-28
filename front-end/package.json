@@ -10,9 +10,13 @@
     "react": "^16.8.6",
     "react-avatar-edit": "^0.8.2",
     "react-dom": "^16.8.6",
+    "react-number-format": "^4.0.7",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-slick": "^0.24.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

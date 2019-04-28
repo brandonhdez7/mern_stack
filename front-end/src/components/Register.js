@@ -60,7 +60,7 @@ class Register extends Component{
                 <SlideDrawer show={this.state.slideDrawerOpen}/> 
                 {backdrop}
                 <div className="linkHomepage">
-                    <Link className="backHomepage"><i class="fas fa-arrow-left"></i> Go Back To Homepage</Link>
+                    <Link to="/" className="backHomepage"><i class="fas fa-arrow-left"></i> Go Back To Homepage</Link>
                 </div>
                 <div className="loginForm">
                 <img className="registerImage" src="./Images/modern-flat-digital-wallet-concept-vector-9283516.png" alt="" />
@@ -77,10 +77,8 @@ class Register extends Component{
                             <input name="password" type="password" value={this.state.password} onChange={this.onChange}  required />
                             <img className="label-text" src="./Images/locked-outline.png" alt="" />
                         </label>
-                            <button type="submit" >SignUp</button>
-                        <Router>
-                            <h3 className="registerLink">Already have an account? <Link className="links" to="/#">Login</Link></h3>
-                        </Router>
+                            <button type="submit">SignUp</button>
+                            <h3 className="registerLink">Already have an account? <Link className="links" to="/login">Login</Link></h3>    
                     </form> 
                 </div>
             </div>
