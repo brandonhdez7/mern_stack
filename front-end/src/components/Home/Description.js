@@ -4,13 +4,14 @@ import Slider from 'react-slick';
 
 const Wrapper = styled.div`
     width: 100%;
-    display:flex;
-    justify-content: center;
 `;
 
 const Page = styled.div`
     width: 100%;
     color: black;
+    display:flex;
+    justify-content: center;
+    text-align: center;
 `;
 
 
@@ -25,9 +26,9 @@ class Description extends Component{
                     infinite={false}
                     dots={true}
                     >
-                    <Page>page one</Page>
-                    <Page>page two</Page>
-                    <Page>page three</Page>
+                    <Page><img className="descriptionImage" src="/Images/koodaa.png" alt=""/></Page>
+                    <Page><img src="/Images/banks.png" alt=""/></Page>
+                    <Page><img src="/Images/payments.png" alt=""/></Page>
                 </Slider>
             
             

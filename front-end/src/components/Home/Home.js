@@ -12,6 +12,8 @@ import styled from 'styled-components'
 
 const AppWrapper = styled.div`
     width: 100%;
+    display:flex;
+    justify-content: center;
 `
 
 class Home extends Component{
@@ -60,7 +62,7 @@ class Home extends Component{
                             <img className="homeImage" src="/Images/coinquista_illu_v1a-01_2x.png" alt=""/>
                         </div>
                     </div>
-                    <AppWrapper>
+                    <AppWrapper className="description">
                         < Description />
                     </AppWrapper>
                     {/* <form>
