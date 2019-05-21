@@ -71,11 +71,11 @@ class Home extends Component{
                             <img className="label-text1" src="./Images/55369.png" alt="" />
                         </label>
                     </form> */}
-                    {/* < MoreDescription />
-                    <div className="pricing">
+                     < MoreDescription />
+                    {/* <div className="pricing">
                         <Payments/>
-                    </div>
-                    < Footer /> */}
+                </div> */}
+                    < Footer /> 
 
                 </div>
 
